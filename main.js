@@ -70,7 +70,7 @@ let gente = [
 
 // Crea un array con la gente mayor de 25 años y muéstralo por consola.
 
-gente.forEach(mayor25) => {
-    console.log(mayor25[0 = "j"]
-}
+const mayor25 = gente.filter(persona => persona.edad > 25);
+mayor25.forEach(persona => console.log(persona))
+
 console.log(mayor25)
