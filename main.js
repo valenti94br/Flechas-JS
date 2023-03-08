@@ -74,3 +74,13 @@ const mayor25 = gente.filter(persona => persona.edad > 25);
 mayor25.forEach(persona => console.log(persona))
 
 console.log(mayor25)
+
+// Crea un array con la gente que empieza por J.
+
+const nombresConJ = gente.filter(persona => persona.nombre.charAt(0) === "J");
+nombresConJ.forEach(persona => console.log(persona))
+
+console.log(nombresConJ)
+
+// 3. Map
+
