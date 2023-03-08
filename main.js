@@ -39,34 +39,34 @@ console.log(test2())
 
 let gente = [
     {
-      nombre: "Jamiro",
-      edad: 45,
+        nombre: "Jamiro",
+        edad: 45,
     },
     {
-      nombre: "Juan",
-      edad: 35,
+        nombre: "Juan",
+        edad: 35,
     },
     {
-      nombre: "Paco",
-      edad: 34,
+        nombre: "Paco",
+        edad: 34,
     },
     {
-      nombre: "Pepe",
-      edad: 14,
+        nombre: "Pepe",
+        edad: 14,
     },
     {
-      nombre: "Pilar",
-      edad: 24,
+        nombre: "Pilar",
+        edad: 24,
     },
     {
-      nombre: "Laura",
-      edad: 24,
+        nombre: "Laura",
+        edad: 24,
     },
     {
-      nombre: "Jenny",
-      edad: 10,
+        nombre: "Jenny",
+        edad: 10,
     },
-  ];
+];
 
 // Crea un array con la gente mayor de 25 años y muéstralo por consola.
 
@@ -98,7 +98,7 @@ console.log(nombresConJMap)
 
 // Dado el siguiente array, crear otro que sea el resultado de elevar cada número a si mismo:
 
-const numbers = [ 4, 5, 6, 7, 8, 9, 10];
+const numbers = [4, 5, 6, 7, 8, 9, 10];
 
 const numerosElevados = numbers.map(num => num ** num)
 
@@ -117,28 +117,36 @@ console.log(numerosImpares)
 
 const foodList = [
     {
-      name: 'Tempeh',
-      isVeggie: true
+        name: 'Tempeh',
+        isVeggie: true
     },
     {
-      name: 'Cheesbacon burguer',
-      isVeggie: false
+        name: 'Cheesbacon burguer',
+        isVeggie: false
     },
     {
-      name: 'Tofu burguer',
-      isVeggie: true
+        name: 'Tofu burguer',
+        isVeggie: true
     },
     {
-      name: 'Entrecot',
-      isVeggie: false
+        name: 'Entrecot',
+        isVeggie: false
     }
-  ];
-  /* [
-      'Que rico Tempeh me voy a comer!',
-      'Que rica Tofu burguer me voy a comer!'
-     ]
-  */
+];
+/* [
+    'Que rico Tempeh me voy a comer!',
+    'Que rica Tofu burguer me voy a comer!'
+   ]
+*/
 
-     const esVeggie = foodList.filter(foodList => foodList.isVeggie = true)
-     const fraseVegana = esVeggie.map(foodList => `Que rico ${foodList.name} me voy a comer!`)
-     console.log(esVeggie)
+const esVeggie = foodList.filter(foodList => foodList.isVeggie)
+const fraseVegana = esVeggie.map(foodList => `Que rico ${foodList.name} me voy a comer!`)
+console.log(fraseVegana)
+
+// 5. Reduce
+
+// Dado el siguiente array, obtén la multiplicación de todos los elementos del array:
+
+const numeros3 = [39, 2, 4, 25, 62];
+const multi = numeros3.reduce((a,b) => a * b)
+console.log(multi)
